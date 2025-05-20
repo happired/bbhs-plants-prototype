@@ -20,7 +20,7 @@ function PlantImage({name}: plant) {
 
 function PlantText({name}: plant) {
     return (
-        <p>
+        <p text-sm = "true">
             {getText(name)}
         </p>
     )
@@ -28,7 +28,7 @@ function PlantText({name}: plant) {
 
 function PlantHeading({name}: plant) {
     return (
-        <h1 className = "plantHeading">
+        <h1 text-xl = "true" className = "plantHeading">
             {name}
         </h1>
     )
