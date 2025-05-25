@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Serif, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import { BrowserRouter } from "react-router";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = IBM_Plex_Serif({
+  variable: "--font-ibm-plex-serif",
   subsets: ["latin"],
+  weight: "600"
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMono = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
+  weight: "500"
 });
 
 export const metadata: Metadata = {
@@ -32,3 +35,4 @@ export default function RootLayout({
     </html>
   );
 }
+

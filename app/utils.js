@@ -12,5 +12,4 @@ export function getText(name) {
     return (
         String(myArr.get(name))
     );
-    console.log(myArr.get(name));
 }
